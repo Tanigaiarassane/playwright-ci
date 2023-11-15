@@ -15,7 +15,7 @@ pipeline {
 
             }
         }
-    stage('install playwright') {
+    stage('Run test') {
             steps {
                 bat '''
                 npx playwright test --list
