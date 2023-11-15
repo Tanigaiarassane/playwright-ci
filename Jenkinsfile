@@ -4,6 +4,7 @@ pipeline {
         stage('install playwright') {
             steps {
                 bat '''
+                npm init
                 npm i -D @playwright/test
                 npx playwright install
                 '''
