@@ -5,6 +5,7 @@ pipeline {
             steps {
                 bat '''
                 npm i -D @playwright/test
+                npm i allure-playwright
                 npx playwright install
                 '''
             }
@@ -27,8 +28,8 @@ pipeline {
 
     }
  post {
-        always {
-            archiveArtifacts artifacts: 'playwright-report/*.html', fingerprint: true
-        }
-    }
+                always {
+                    allure includeProperties: false, jdk: '', results: [[path: 'tests/allure-results']]
+                }
+            }
 }
