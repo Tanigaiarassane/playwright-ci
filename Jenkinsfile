@@ -18,12 +18,17 @@ pipeline {
     stage('Run test') {
             steps {
                 bat '''
-                npx playwright test
+                npx playwright test --reporter=html
                 npx playwright show-report 
                 '''
 
             }
         }
 
+    }
+ post {
+        always {
+            archiveArtifacts artifacts: './playwright-report/*.html', fingerprint: true
+        }
     }
 }
