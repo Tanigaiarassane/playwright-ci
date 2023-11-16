@@ -20,6 +20,7 @@ pipeline {
                 bat '''
                 npx playwright test --list
                 npx playwright test
+                npx playwright show-report 
                 '''
 
             }
