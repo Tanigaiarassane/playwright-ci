@@ -28,7 +28,7 @@ pipeline {
     }
  post {
         always {
-            archiveArtifacts artifacts: './playwright-report/*.html', fingerprint: true
+            archiveArtifacts artifacts: 'playwright-report/*.html', fingerprint: true
         }
     }
 }
