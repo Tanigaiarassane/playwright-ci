@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Sat Nov 18 11:37:51 IST 2023","Sat Nov 18 11:37:51 IST 2023","398","","example.spec.ts","","","","Not having title title",""
+"passed","Sat Nov 18 11:34:17 IST 2023","Sat Nov 18 11:34:17 IST 2023","391","","example.spec.ts","","","","Welcome title",""
+"passed","Sat Nov 18 11:37:49 IST 2023","Sat Nov 18 11:37:49 IST 2023","345","","example.spec.ts","","","","has title",""
